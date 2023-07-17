@@ -11,9 +11,7 @@ public class LinkedListTEST {
         LinkedList sut = new LinkedList();
         sut.insert("Nick");
         sut.insert("Sara");
-        System.out.println(value);
+        sut.print();
 
     }
-
-
 }
