@@ -1,19 +1,16 @@
 package applications;
 
+import java.util.*;
+
+
 public class LinkedList {
-    private LinkedListNodeCLASS head;
+    Node head;
 
-    public void insert(String data) {
-        LinkedListNodeCLASS newNode = new LinkedListNodeCLASS(data);
+    public void integerInsert(int value) {
+        Node insertNode = new Node(value);
+        insertNode.next = head;
+        head = insertNode;
 
-        if (head == null) {
-            head = newNode;
-        } else {
-            LinkedListNodeCLASS current = head;
-            while (current.getNext() != null) {
-                current = current.getNext();
-            }
-            current.setNext(newNode);
-        }
     }
+
 }
